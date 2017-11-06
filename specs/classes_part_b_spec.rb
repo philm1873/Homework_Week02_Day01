@@ -48,4 +48,11 @@ class TestClassesPartB < MiniTest::Test
     sports_team.add_player("Gascoigne")
     assert_equal(["Smith", "Jones", "Mitchell", "Gascoigne"],sports_team.players)
   end
+
+  def test_search_player
+    players = ["Smith", "Jones", "Mitchell"]
+    sports_team = SportsTeam.new("Rangers", players, "Graeme Murty")
+    result = sports_team.search_player(players, "Mitchell")
+    assert_equal(true, result)
+  end
 end

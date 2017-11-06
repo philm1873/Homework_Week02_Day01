@@ -9,4 +9,9 @@ class SportsTeam
   def add_player(player)
     @players.push(player)
   end
+
+  def search_player(array, player)
+    array.index(player) != nil
+  end
+
 end

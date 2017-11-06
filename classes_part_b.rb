@@ -5,4 +5,8 @@ class SportsTeam
     @players = input_players
     @coach = input_coach
   end
+
+  def add_player(player)
+    @players.push(player)
+  end
 end

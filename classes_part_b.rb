@@ -12,8 +12,8 @@ class SportsTeam
     @players.push(player)
   end
 
-  def search_player(array, player)
-    array.index(player) != nil
+  def search_player(player)
+    @players.index(player) != nil
   end
 
   def add_points(result)
